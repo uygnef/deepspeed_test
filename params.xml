@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+
+	<property type="bool">
+		<name>afo.app.support.engine.failover</name>
+		<value>false</value>
+	</property>
+	<property type="int">
+		<name>afo.role.worker.env.YARN_CONTAINER_RUNTIME_DOCKER_SHM_SIZE_BYTES</name>
+		<value>85899345920</value>
+	</property>
+	<property type="int">
+		<name>afo.role.worker.task.attempt.max.retry</name>
+		<value>5</value>
+	</property>
+	<property type="bool">
+		<name>afo.use.acceleration.submission</name>
+		<value>true</value>
+	</property>
+	<property type="bool">
+		<name>afo.use.data.dispatch</name>
+		<value>false</value>
+	</property>
+	<property type="bool">
+		<name>afo.use.prefetch</name>
+		<value>false</value>
+	</property>
+	<property type="bool">
+		<name>afo.use.torch</name>
+		<value>true</value>
+	</property>
+	<property type="float">
+		<name>args.adam_beta1</name>
+		<value>0.9</value>
+	</property>
+	<property type="float">
+		<name>args.adam_beta2</name>
+		<value>0.999</value>
+	</property>
+	<property type="float">
+		<name>args.adam_epsilon</name>
+		<value>1e-08</value>
+	</property>
+	<property type="float">
+		<name>args.adam_weight_decay</name>
+		<value>0.01</value>
+	</property>
+	<property type="bool">
+		<name>args.allow_tf32</name>
+		<value>false</value>
+	</property>
+	<property type="int">
+		<name>args.batch_size</name>
+		<value>100</value>
+	</property>
+	<property type="NoneType">
+		<name>args.cache_dir</name>
+		<value>None</value>
+	</property>
+	<property type="str">
+		<name>args.caption_column</name>
+		<value>text</value>
+	</property>
+	<property type="bool">
+		<name>args.center_crop</name>
+		<value>false</value>
+	</property>
+	<property type="int">
+		<name>args.checkpointing_steps</name>
+		<value>2000</value>
+	</property>
+	<property type="NoneType">
+		<name>args.checkpoints_total_limit</name>
+		<value>None</value>
+	</property>
+	<property type="str">
+		<name>args.ckpt_dir</name>
+		<value>/tmp</value>
+	</property>
+	<property type="int">
+		<name>args.dataloader_num_workers</name>
+		<value>2</value>
+	</property>
+	<property type="NoneType">
+		<name>args.dataset_config_name</name>
+		<value>None</value>
+	</property>
+	<property type="str">
+		<name>args.dataset_func</name>
+		<value>v2</value>
+	</property>
+	<property type="str">
+		<name>args.dataset_name</name>
+		<value>lambdalabs/pokemon-blip-captions</value>
+	</property>
+	<property type="bool">
+		<name>args.enable_xformers_memory_efficient_attention</name>
+		<value>false</value>
+	</property>
+	<property type="int">
+		<name>args.epoch_num</name>
+		<value>10</value>
+	</property>
+	<property type="int">
+		<name>args.eval_batch_size</name>
+		<value>32</value>
+	</property>
+	<property type="str">
+		<name>args.eval_type</name>
+		<value>chinese_clip</value>
+	</property>
+	<property type="bool">
+		<name>args.evaluate_after_epoch</name>
+		<value>true</value>
+	</property>
+	<property type="int">
+		<name>args.gradient_accumulation_steps</name>
+		<value>1</value>
+	</property>
+	<property type="bool">
+		<name>args.gradient_checkpointing</name>
+		<value>false</value>
+	</property>
+	<property type="NoneType">
+		<name>args.hub_model_id</name>
+		<value>None</value>
+	</property>
+	<property type="NoneType">
+		<name>args.hub_token</name>
+		<value>None</value>
+	</property>
+	<property type="str">
+		<name>args.image_column</name>
+		<value>image</value>
+	</property>
+	<property type="float">
+		<name>args.learning_rate</name>
+		<value>1e-05</value>
+	</property>
+	<property type="NoneType">
+		<name>args.load_epoch</name>
+		<value>None</value>
+	</property>
+	<property type="str">
+		<name>args.log_dir</name>
+		<value>/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-waimai-rank/fengyu05/image_diffusion/stable_diffusion_save_model/sdv2_clip_8gpus_full_finetune_food_1epoch</value>
+	</property>
+	<property type="int">
+		<name>args.log_step</name>
+		<value>1000</value>
+	</property>
+	<property type="float">
+		<name>args.lr</name>
+		<value>0.01</value>
+	</property>
+	<property type="str">
+		<name>args.lr_scheduler</name>
+		<value>cosine</value>
+	</property>
+	<property type="int">
+		<name>args.lr_warmup_steps</name>
+		<value>500</value>
+	</property>
+	<property type="bool">
+		<name>args.main_process_log</name>
+		<value>true</value>
+	</property>
+	<property type="float">
+		<name>args.max_grad_norm</name>
+		<value>1.0</value>
+	</property>
+	<property type="NoneType">
+		<name>args.max_train_samples</name>
+		<value>None</value>
+	</property>
+	<property type="NoneType">
+		<name>args.max_train_steps</name>
+		<value>None</value>
+	</property>
+	<property type="str">
+		<name>args.meta_format</name>
+		<value>prompt_txt</value>
+	</property>
+	<property type="NoneType">
+		<name>args.mixed_precision</name>
+		<value>None</value>
+	</property>
+	<property type="NoneType">
+		<name>args.non_ema_revision</name>
+		<value>None</value>
+	</property>
+	<property type="int">
+		<name>args.num_gpu</name>
+		<value>8</value>
+	</property>
+	<property type="int">
+		<name>args.num_train_epochs</name>
+		<value>10</value>
+	</property>
+	<property type="bool">
+		<name>args.predict_after_epoch</name>
+		<value>true</value>
+	</property>
+	<property type="str">
+		<name>args.pretrained_dir</name>
+		<value>/tmp</value>
+	</property>
+	<property type="str">
+		<name>args.pretrained_model_name_or_path</name>
+		<value>runwayml/stable-diffusion-v1-5</value>
+	</property>
+	<property type="bool">
+		<name>args.push_to_hub</name>
+		<value>false</value>
+	</property>
+	<property type="bool">
+		<name>args.random_flip</name>
+		<value>false</value>
+	</property>
+	<property type="str">
+		<name>args.report_to</name>
+		<value>tensorboard</value>
+	</property>
+	<property type="int">
+		<name>args.resolution</name>
+		<value>512</value>
+	</property>
+	<property type="NoneType">
+		<name>args.resume_from_checkpoint</name>
+		<value>None</value>
+	</property>
+	<property type="NoneType">
+		<name>args.revision</name>
+		<value>None</value>
+	</property>
+	<property type="str">
+		<name>args.run_mode</name>
+		<value>local_train</value>
+	</property>
+	<property type="bool">
+		<name>args.save_after_epoch</name>
+		<value>true</value>
+	</property>
+	<property type="bool">
+		<name>args.scale_lr</name>
+		<value>false</value>
+	</property>
+	<property type="NoneType">
+		<name>args.seed</name>
+		<value>None</value>
+	</property>
+	<property type="str">
+		<name>args.task_type</name>
+		<value>aigc_train</value>
+	</property>
+	<property type="bool">
+		<name>args.timeline_enable</name>
+		<value>false</value>
+	</property>
+	<property type="int">
+		<name>args.train_batch_size</name>
+		<value>24</value>
+	</property>
+	<property type="NoneType">
+		<name>args.train_data_dir</name>
+		<value>None</value>
+	</property>
+	<property type="str">
+		<name>args.train_type</name>
+		<value>clip_full_finetune_food</value>
+	</property>
+	<property type="str">
+		<name>args.trainer</name>
+		<value>runner.trainer.Trainer</value>
+	</property>
+	<property type="bool">
+		<name>args.use_8bit_adam</name>
+		<value>false</value>
+	</property>
+	<property type="bool">
+		<name>args.use_bn_sync</name>
+		<value>false</value>
+	</property>
+	<property type="bool">
+		<name>args.use_ema</name>
+		<value>false</value>
+	</property>
+
+	<property type="float">
+		<name>args.wd</name>
+		<value>0.0</value>
+	</property>
+
+	<property type="int">
+		<name>board.memory</name>
+		<value>16000</value>
+	</property>
+	<property type="int">
+		<name>board.vcore</name>
+		<value>4</value>
+	</property>
+	<property type="bool">
+		<name>client.git.revision.publish</name>
+		<value>true</value>
+	</property>
+	<property type="int">
+		<name>num_gpu</name>
+		<value>8</value>
+	</property>
+	<property type="str">
+		<name>type</name>
+		<value>ml-easy-job</value>
+	</property>
+	<property type="str">
+		<name>usergroup</name>
+		<value>hadoop-hmart-waimai-rank</value>
+	</property>
+	<property type="bool">
+		<name>with.tensor.board</name>
+		<value>true</value>
+	</property>
+	<property type="int">
+		<name>worker.gcores80g</name>
+		<value>8</value>
+	</property>
+	<property type="int">
+		<name>worker.memory</name>
+		<value>921600</value>
+	</property>
+	<property type="int">
+		<name>worker.vcore</name>
+		<value>160</value>
+	</property>
+	<property type="int">
+		<name>workers</name>
+		<value>1</value>
+	</property>
+</configuration>
